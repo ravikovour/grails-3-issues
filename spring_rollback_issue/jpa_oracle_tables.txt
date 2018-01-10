@@ -1,0 +1,31 @@
+/*** SAMPLE ORACLE TABLES ***/
+CREATE TABLE UNIVERSITY (
+   university_id INT NOT NULL,
+   university_code VARCHAR(10) NOT NULL,	
+   name VARCHAR(30) NOT NULL,
+   country  VARCHAR(30)
+);
+
+ALTER TABLE UNIVERSITY ADD (
+  CONSTRAINT univ_pk PRIMARY KEY (university_id)
+);
+
+CREATE TABLE COURSE (
+   course_id INT NOT NULL,
+   course_code VARCHAR(3) NOT NULL,	
+   course_name VARCHAR(30) NOT NULL
+);
+
+ALTER TABLE COURSE ADD (
+  CONSTRAINT course_pk PRIMARY KEY (course_id)
+);
+
+/*** SAMPLE DATA ***/
+
+Insert into UNIVERSITY VALUES (1,'UNI-1','University-1','City-1')
+Insert into UNIVERSITY VALUES (2,'UNI-2','University-2','City-2')
+
+Insert into COURSE VALUES (1,'CSE','Computers')
+Insert into COURSE VALUES (2,'ECE','Electronics')
+
+commit

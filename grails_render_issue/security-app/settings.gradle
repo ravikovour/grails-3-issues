@@ -1,0 +1,3 @@
+include ':user-core'
+project(':user-core').projectDir = new File('../user-core')
+

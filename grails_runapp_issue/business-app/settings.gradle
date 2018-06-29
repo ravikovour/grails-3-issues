@@ -1,0 +1,3 @@
+include ':business-core'
+project(':business-core').projectDir = new File('../business-core')
+

@@ -1,0 +1,3 @@
+include ':data-core'
+project(':data-core').projectDir = new File('../data-core')
+
